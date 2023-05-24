@@ -63,3 +63,32 @@ function likes(names) {
 // 5. Grasshopper - Personalized Message
 
 const greet = (name, owner) => name === owner ? 'Hello boss' : 'Hello guest'
+
+// 6. Replace With Alphabet Position
+
+function alphabetPosition(text) {
+  let result = "";
+  let alphabet = 'abcdefghijklmnopqrstuvwxyz';
+
+  text = text.toLowerCase();
+
+  for (let i = 0; i < text.length; i++) {
+    let char = text.charAt(i);
+    let position = alphabet.indexOf(char) + 1;
+  
+    //indexOf returns -1 if the character does not exist in alphabet (i.e. not a letter)
+    if (position > 0) {
+      result += position + " ";
+    }
+  }
+
+  // Remove the trailing space
+  result = result.trim();
+
+  return result;
+}
+
+// Example usage:
+// var text = "The sunset sets at twelve o' clock.";
+// var positions = alphabetPosition(text);
+// console.log(positions);
