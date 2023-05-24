@@ -59,3 +59,7 @@ function likes(names) {
     return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`
   }
 }
+
+// 5. Grasshopper - Personalized Message
+
+const greet = (name, owner) => name === owner ? 'Hello boss' : 'Hello guest'
