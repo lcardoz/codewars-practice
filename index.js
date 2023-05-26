@@ -88,7 +88,14 @@ function alphabetPosition(text) {
   return result;
 }
 
-// Example usage:
-// var text = "The sunset sets at twelve o' clock.";
-// var positions = alphabetPosition(text);
-// console.log(positions);
+    // Example usage:
+    // let text = "The sunset sets at twelve o' clock.";
+    // let positions = alphabetPosition(text);
+    // console.log(positions);
+
+// 7. Sum of two lowest positive integers
+
+function sumTwoSmallestNumbers(numbers){  
+  numbers.sort((a,b) => a - b);
+  return numbers[0] + numbers[1];
+};
