@@ -142,4 +142,20 @@ function unusualFive() {
   return "abcde".length
  }
 
-//  12.
+//  12. Multiplication table
+
+multiplicationTable = function(size) {
+  const table = [];
+
+  for (let i = 1; i <= size; i++) {
+    const row = [];
+
+    for (let j = 1; j <= size; j++) {
+      row.push(i * j);
+    }
+
+    table.push(row);
+  }
+
+  return table;
+}
