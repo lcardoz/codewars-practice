@@ -109,4 +109,10 @@ Write a program that returns the girl's age (0-9) as an integer.
 
 Assume the test input string is always a valid string. For example, the test input may be "1 year old" or "5 years old". The first character in the string is always a number.
 
+11. 5 without numbers !!
 
+Write a function that always returns 5
+
+Sounds easy right? Just bear in mind that you can't use any of the following characters: 0123456789*+-/
+
+12. 

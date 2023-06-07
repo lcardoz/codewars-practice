@@ -136,3 +136,10 @@ function isPrime(num) {
 
 const getAge = (inputString) => parseInt(inputString)
 
+// 11. 5 without numbers
+
+function unusualFive() {
+  return "abcde".length
+ }
+
+//  12.
