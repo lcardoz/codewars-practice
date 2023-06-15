@@ -128,3 +128,8 @@ For example, when given size is 3:
 For the given example, the return value should be:
 
 [ [1,2,3], [2,4,6], [3,6,9] ]
+
+13. Super Duper Easy
+
+Make a function that returns the value multiplied by 50 and increased by 6. If the value entered is a string it should return "Error".
+
