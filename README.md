@@ -133,3 +133,18 @@ For the given example, the return value should be:
 
 Make a function that returns the value multiplied by 50 and increased by 6. If the value entered is a string it should return "Error".
 
+14. Grasshopper - Messi goals function
+
+Messi is a soccer player with goals in three leagues:
+
+LaLiga
+Copa del Rey
+Champions
+Complete the function to return his total number of goals in all three leagues.
+
+Note: the input will always be valid.
+
+For example:
+
+5, 10, 2  -->  17
+

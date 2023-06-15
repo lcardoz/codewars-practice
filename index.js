@@ -160,8 +160,14 @@ multiplicationTable = function(size) {
   return table;
 }
 
-// 13. Super Duper Easy
+//  13. Super Duper Easy
 
 function problem(x) {
  return typeof x === 'string' ? 'Error' : x * 50 + 6;
+}
+
+//  14. Grasshopper - Messi goals function
+
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals
 }
