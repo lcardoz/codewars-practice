@@ -195,3 +195,21 @@ function getRealFloor(n) {
     function getRealFloor(n) {
       return n > 13 ? n - 2 : n > 0 ? n - 1 : n;
     }
+
+// 16. Sum of Digits / Digital Root
+
+function digitalRoot(n) {
+  if (n < 10) {
+    return n
+  } else {
+    let nSplitString = n.toString().split("");
+
+    let sum = 0
+
+    for (let i = 0; i <= nSplitString.length -1; i++) {
+      sum += parseInt(nSplitString[i]) 
+    }
+
+    return sum < 10 ? sum : digitalRoot(sum)
+  }
+}
