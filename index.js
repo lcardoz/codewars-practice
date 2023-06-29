@@ -213,3 +213,17 @@ function digitalRoot(n) {
     return sum < 10 ? sum : digitalRoot(sum)
   }
 }
+
+// 17. Sum of Parts
+
+function partsSums(ls) {
+  const sumArr = [];
+  
+  sumArr.push(ls.reduce((a, b) => a + b, 0));
+  
+  for (let i = 0; i < ls.length; i++) {
+    sumArr.push((sumArr[i]) - ls[i]);
+  };
+
+  return sumArr;
+}
