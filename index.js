@@ -227,3 +227,11 @@ function partsSums(ls) {
 
   return sumArr;
 }
+
+// 18. Get the Middle Character
+
+function getMiddle(s) {
+  const charNum = s.length
+  let half = charNum/2
+  return charNum % 2 === 0 ? s.charAt(half -1).concat(s.charAt(half)) : s.charAt(half)
+}
