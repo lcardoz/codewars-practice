@@ -235,3 +235,16 @@ function getMiddle(s) {
   let half = charNum/2
   return charNum % 2 === 0 ? s.charAt(half -1).concat(s.charAt(half)) : s.charAt(half)
 }
+
+// 19. Remove Duplicates from Sorted Array
+
+var removeDuplicates = function(nums) {
+    for (let i = 1; i < nums.length; i++) {
+        if (nums[i - 1] === nums[i]) {
+            nums.splice(i, 1)
+            i--
+        }
+    }
+    
+    return k = nums.length
+};
