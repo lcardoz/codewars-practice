@@ -264,3 +264,20 @@ var reverseString = function(s) {
         end--
     }
 };
+
+// 21. First Unique Character in a String
+
+var firstUniqChar = function(s) {
+    const count = {};
+    
+    for (char of s) {
+        if (char in count) count[char] += 1
+        else count[char] = 1
+    }
+    
+    for (char of s) {
+        if (count[char] === 1) return s.indexOf(char)
+    } 
+    
+    return -1
+};
