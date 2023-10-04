@@ -248,3 +248,19 @@ var removeDuplicates = function(nums) {
     
     return k = nums.length
 };
+
+// 20. Reverse String
+
+var reverseString = function(s) {
+    let start = 0
+    let end = s.length -1
+    
+    while (start < end) {
+        const first = s[start]
+        const last = s[end]
+        s[start] = last
+        s[end] = first
+        start++
+        end--
+    }
+};
