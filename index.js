@@ -281,3 +281,33 @@ var firstUniqChar = function(s) {
     
     return -1
 };
+
+// 22. Reverse Linked List
+
+  // iteratively: 
+  var reverseList = function(head) {
+    if (head === null) return null
+    if (head.next === null) return head
+    
+    let prev = null
+    let current = head
+    let next = head.next
+    
+    while (next !== null) {
+      next = current.next
+      current.next = prev
+      prev = current
+      current = next
+    }
+    return prev
+  };
+
+  // recursively:
+  var reverseList = function(head, prev = null) {
+    if (head === null) return prev
+    
+    const next = head.next
+    head.next = prev
+    return reverseList(next, head)
+  };
+

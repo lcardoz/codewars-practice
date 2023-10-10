@@ -246,4 +246,9 @@ You must do this by modifying the input array in-place with O(1) extra memory.
 
 Given a string s, find the first non-repeating character in it and return its index. If it does not exist, return -1.
 
+22. Reverse Linked List
+
+Given the head of a singly linked list, reverse the list, and return the reversed list.
+
+Follow up: A linked list can be reversed either iteratively or recursively. Could you implement both?
 
