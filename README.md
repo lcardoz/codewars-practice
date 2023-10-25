@@ -252,3 +252,15 @@ Given the head of a singly linked list, reverse the list, and return the reverse
 
 Follow up: A linked list can be reversed either iteratively or recursively. Could you implement both?
 
+23. Merge Two Sorted Lists
+
+You are given the heads of two sorted linked lists list1 and list2.
+
+Merge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists.
+
+Return the head of the merged linked list.
+
+24. Rotate Array
+
+Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.
+

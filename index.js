@@ -311,3 +311,54 @@ var firstUniqChar = function(s) {
     return reverseList(next, head)
   };
 
+// 23. Merge Two Sorted Lists
+
+  var mergeTwoLists = function(list1, list2) {
+      if (list1 === null && list2 === null) return null
+      if (list1 !== null && list2 === null) return list1
+      if (list1 === null && list2 !== null) return list2
+      
+      let current1 = list1
+      let current2 = list2
+      let tail = null
+      
+      while (current1 !== null && current2 !== null) {
+          let next1 = current1.next
+          let next2 = current2.next
+          
+          if (current1.val === current2.val) {
+              current1.next = current2
+              tail = current2
+              current1 = tail
+              current2 = next2
+          }
+          
+          if (current1.val > current2.val) {
+              current2.next = current1
+              tail = current1
+              current2 = tail
+              current1 = next1
+          }
+          
+          if (current1.val < current2.val) {
+              current1.next = current2
+              tail = current2
+              current1 = tail
+              current2 = next2
+          } 
+      }
+      if (list1.val > list2.val) return list2
+      else return list1
+  };
+  
+// 24. Rotate Array
+
+let rotate = function(arr, numberOfShifts) {
+  let deletedArray = arr.splice(arr.length-numberOfShifts);
+  
+  for (let i=0; i < deletedArray.length; i++) {
+    arr.splice(i,0,deletedArray[i]);
+  }
+  
+  return arr;
+};
